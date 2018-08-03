@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'myfont';
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(221, 216, 216);
+}
+@font-face{
+    font-family: 'myfont';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+header{
+    display: flex;
+	align-items: center;
+	color: #0c3786;
+	background:#0d324b;
+    width:100%;
+  
+}
+
+.logo
+{
+	width: 45%;
+	font-size: 50px;
+    font-weight: bold;
+    color: rgb(252, 249, 249);
+}
+
+.header-top
+{
+	display: flex;
+	align-items: center;
+	right: 10;
+}
+
+.header-top li a
+{
+	padding: 10px 18px;
+	color: #C7C6C6;
+    transition: 0.6s;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+.header-top li a:hover
+{
+    color: #B16A0C;
+	text-shadow: 2px 2px 4px #031A31;
+	transition: 0.6s;
+}
+
+.main-header
+{
+	max-width: 100%;
+    text-align:right;
+    height: 350px;
+    margin: 10% 90px;
+
+}
+
+.main-header h1
+{
+	font-size: 100px;
+	margin: 25px 125px;
+    line-height: 80px;
+    color:rgb(221, 216, 216);
+}
+
+.main-header p
+{
+
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    color: rgb(221, 216, 216);
+    margin: 25px 125px;
+}
+
+.main-header a
+{
+
+    padding: 10px 20px;
+    margin: 25px 300px;
+    color: rgb(221, 216, 216);
+    background: #0d324b;
+    border-radius: 50px;
+    transition:all linear 0.3s;
+    text-transform:capitalize;
+    font-size: 18px;
+    font-weight: lighter;
+    transition:all linear 0.2s;
+    cursor:pointer;
+    transition:0.6s;
+    
+}
+
+.main-header a:hover
+{
+    transition: 0.6s;
+    color: #B16A0C;
+    background: #0d324b;
+	box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.9);
+}
+
+.backdrop
+{
+	background-image: url(../images/blogging-business-coding-34140.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -5;
+	position: absolute;
+	overflow: hidden;
+}
+
+.registration{
+    width: 100%;
+    /* margin: auto; */
+    text-align: center;
+    z-index: -5;
+    height: 460px;
+    color: rgb(221, 216, 216);
+    background: #fff;
+}
+.threesections{
+    background: #fff;
+    padding: 96px 0;
+}
+
+
+.icon-box {
+    padding: 40px;
+    border-radius: 24px;
+    background: #ecf2f5;
+    text-align: center;
+    transition: 0.8s;
+
+}
+
+.icon-box:hover,
+.icon-box.active {
+    transition:  0.8s;
+    border: 0;
+    background: linear-gradient(270deg, rgb(13, 37, 116) 0%, rgb(8, 91, 146) 100%); /* w3c */
+    color: #fff;
+}
+
+.entry-header{
+    background: none;
+    
+}
+.icon-box .entry-title {
+    margin-top: 28px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    text-align: center;
+}
+
+.icon-box:hover .entry-title,
+.icon-box.active .entry-title {
+    color: #fff;
+}
+
+.icon-box .entry-content {
+    margin-top: 24px;
+}
+
+.icon-box .entry-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #595858;
+}
+
+.icon-box:hover .entry-content p,
+.icon-box.active .entry-content p {
+    color: #fff;
+}
+
+/*
+# Welcome
+--------------------------------*/
+.home-page-welcome {
+    position: relative;
+    padding: 96px 0;
+    background: url("../images/business-computer-contemporary-669996.jpg") no-repeat center;
+    background-size: cover;
+    z-index: 99;
+}
+
+.home-page-welcome::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(21,21,21,.9);
+}
+
+.welcome-content .entry-title {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.welcome-content .entry-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 64px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgb(3, 50, 97);
+}
+
+.welcome-content .entry-content {
+    font-size: 14px;
+    line-height: 2;
+    color: #b7b7b7;
+}
+
+.home-page-welcome img {
+    display: block;
+    width: 100%;
+}
+
+.entry-footer {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #031A31;
+    text-decoration: none;
+}
+
+.btn.gradient-bg {
+    border-color: transparent;
+    background: linear-gradient(270deg, rgb(13, 37, 116) 0%, rgb(8, 91, 146) 100%); 
+    color: #fff;
+    border: none;
+}
+
+.btn {
+    padding: 18px 40px;
+    border: 2px solid #262626;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: #262626;
+    outline: none;
+}
